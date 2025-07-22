@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "uh4",
+	"version": "${version}",
+	"name": "UH4",
+	"description": "The required mod to play UH4",
+	"authors": [
+		"Kosha",
+		"Pavlo",
+		"LaTeteraGamer"
+	],
+	"contact": {
+		"homepage": "https://kosha.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/uh4/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kosha.uh4.UH4"
+		],
+		"fabric-datagen": [
+			"net.kosha.uh4.UH4DataGenerator"
+		],
+		"client": [
+			"net.kosha.uh4.uh4Client"
+		]
+	},
+	"mixins": [
+		"uh4.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
