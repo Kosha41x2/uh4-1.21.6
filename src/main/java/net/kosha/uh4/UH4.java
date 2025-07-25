@@ -2,6 +2,7 @@ package net.kosha.uh4;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.kosha.uh4.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +12,6 @@ public class UH4 implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
